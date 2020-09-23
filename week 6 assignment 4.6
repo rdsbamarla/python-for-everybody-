@@ -1,0 +1,15 @@
+def computepay():
+  hrs= input()
+  hrs = float(hrs)
+  rph= float(input())
+
+  if hrs<=40:
+    gp=hrs*rph
+  else :
+    gp=rph*40
+    hrs= hrs-40
+    gp=gp + hrs*rph*1.5
+  return gp
+
+gp= computepay()
+print('Pay',gp)
